@@ -14,19 +14,18 @@ const HeaderBar = () => {
     >
       <Nav
         mode='horizontal'
-        header={
-          {
-            text: '令牌查询',
-            logo: (
-              <div style={{ width: '100%', height: '100%' }}>
-                < IconTag size='large' />
-              </div>
-            )
-          }
-        }
-        footer={
-          <Typography.Text link={{ href: 'https://github.com/Calcium-Ion/neko-api-key-tool' }}>Copyright © 2024 NewAPI. All Rights Reserved.</Typography.Text>
-        }
+        header={{
+          text: '令牌查询',
+          logo: (
+            <div style={{ width: '100%', height: '100%' }}>
+              <IconTag size='large' />
+            </div>
+          ),
+        }}
+        // Remove or comment out the footer section to remove the copyright text
+        // footer={
+        //   <Typography.Text link={{ href: 'https://github.com/Calcium-Ion/neko-api-key-tool' }}>Copyright © 2024 NewAPI. All Rights Reserved.</Typography.Text>
+        // }
       />
     </div>
   );
